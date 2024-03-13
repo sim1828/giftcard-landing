@@ -1,0 +1,385 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+:root{
+--yellow:rgba(254, 204, 42, 1);
+}
+/* ===========================================navbar */
+#navbar{
+    background: #000;}
+
+#navbar i {
+    color:var(--yellow);
+   
+}
+
+.navbar-nav .nav-link {
+  color: #ffffff; 
+  font-size: 18px; 
+  font-family:Montserrat;
+  font-weight: 500px;
+}
+.navbar-nav .nav-link:hover {
+  color: rgba(254, 204, 42, 1);
+  text-decoration: underline; }
+#login{
+    border: 1px solid var(--yellow);
+    color:var(--yellow);
+    font-weight: 600;
+    text-decoration: none;
+    
+}
+.navbar-toggler-icon{
+    background-color:var(--yellow);
+    
+}
+/* ==============================================================homesection */
+#home{
+    background:linear-gradient(
+   rgba(0, 0, 0, 0.7), 
+   rgba(0, 0, 0, 0.7)
+ ),
+
+ url("./img/home.jpg");
+background-size: cover;
+height:70vh;
+
+}
+#home .content-home{
+    width:70%;
+    text-align:center;
+}
+#home h3, h2{
+  color: #fff;
+  font-family: Montserrat;
+}
+a.btn{
+    background: var(--yellow);
+    color: black;
+    font-weight: bold;
+   
+   
+}
+a.btn:hover{
+  background:rgb(212, 198, 150);
+  border:1px solid var(--yellow);
+  color:black;
+  font-weight: bold;
+}
+
+@media (max-width: 767px) {
+  #home {
+    padding: 30px 20px;
+    height:40vh;
+  }
+
+  .content-home {
+    text-align: center;
+  }
+
+  .content-home h3 {
+    font-size: 16px; 
+  }
+
+  .content-home h2 {
+    font-size: 8px;
+  }
+
+  .content-home .btn {
+    font-size: 13px; 
+  }
+}
+/* =========================================================exclusive_product================ */
+#exclusive_product{
+    background-color: gainsboro;
+}
+#exclusive_product figure, #gift_card figure{
+    width: 50px;
+    height: 50px;
+    display: grid;
+    place-items: center;
+
+}
+/* ======================================Our Products========================= */
+.view-all {
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 14px;
+  color: #777;
+  cursor: pointer;
+}
+
+.navbargallery {
+  padding: 15px 0;
+}
+
+.navbargallery ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.navbargallery ul li {
+  display: inline;
+}
+
+.navbargallery ul li a {
+  color: #000000;
+  text-decoration: none;
+  padding: 10px 20px;
+  transition: background-color 0.3s ease;
+}
+
+.navbargallery ul li a:hover {
+  text-decoration: underline;
+}
+.navbar-brand.logo img {
+  width: 75px; 
+  height: 73px; 
+  vertical-align: middle; 
+}
+
+:root {
+  --gap: 15px;
+  --width: 240px;
+}
+
+.container-gallery {
+    margin: 0 auto;
+    max-width: 1200px;
+  }
+.container-gallery > a {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2em;
+  overflow: hidden;
+}
+
+.container-gallery > a::after {
+  content: "";
+  background: linear-gradient(transparent, black);
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  transform: translateY(100%);
+  transition-duration: 0.75s;
+}
+
+.container-gallery > a:hover::after {
+  transform: translateY(50%);
+}
+
+.container-gallery > a > * {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  transition-duration: 1s;
+}
+
+.container-gallery > a:hover > img {
+  transform: scale(1.05);
+}
+
+.container-gallery {
+  display: grid;
+  grid-gap: var(--gap);
+  grid-template-columns: repeat(auto-fit, minmax(var(--width), 1fr));
+  grid-auto-rows: var(--height);
+  grid-auto-flow: dense;
+}
+
+.horizontal {
+  grid-column: span 2;
+}
+
+.vertical {
+  grid-row: span 2;
+}
+
+.big {
+  grid-column: span 2;
+  grid-row: span 2;
+}
+
+.menu-item {
+  margin-right: 15px;
+}
+.hgllery{
+  
+
+  text-align: center;
+  margin-top: 20px;
+  position: relative;
+
+}
+#our_Products span{
+    color:grey;
+    padding: 3px 10px;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+}
+
+
+  #gift_card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color:rgba(0, 0, 0, 0.847);
+  }
+
+  #gift_card p{
+    font-size: smaller;
+    text-align: center;
+  }
+
+
+ #category #category_card{
+    height: 300px;
+    
+
+  }
+  #category_card .img-fluid {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+ 
+  }
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); 
+  z-index: 998; /* Ensure the overlay layer is behind the text */
+}
+.with-background {
+  background-image: url('img/background.png'); /* Specify the path to your background image */
+  background-size: cover;
+  background-position: center;
+  color: white; /* Ensure text is readable on top of the background image */
+}
+
+ 
+
+  #client_feedback .quote{
+  font-size:4rem;
+
+  }
+
+  #client_feedback .quote > i{
+    position:absolute;
+    top:0px;
+  }
+#footer {
+  background-color: rgba(8, 8, 8, 1);
+ 
+  
+}
+#footer p{
+  font-family: Fredoka;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 28px;
+  letter-spacing: 0em;
+  text-align: left;
+  
+}
+  .footer-icons {
+    background-color: var(--yellow);
+    padding: 10px 10px;
+    width: 40px;
+    height:40px;
+    margin:10px;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+  }
+  #footer ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  #footer ul li {
+    margin-bottom: 8px; /* Adjust as needed */
+    color: #fff; /* Example color */
+    font-family: Montserrat;
+  }
+  
+  #footer ul li:hover {
+    color: rgba(254, 204, 42, 1);
+
+    cursor: pointer;
+  }
+  
+
+.carousel-indicators .active {
+  background-color: #007bff;
+ 
+}
+#copyright{
+  color: #fff;
+}
+
+.carousel-indicators li {
+  background-color: #ccc;
+  width:50px;
+  height:50px;
+  border-radius: 100%;
+}
+
+.carousel-indicators {
+  bottom: -61px !important;
+}
+
+#contactUs{
+ 
+    background:linear-gradient(
+   rgba(0, 0, 0, 0.7), 
+   rgba(0, 0, 0, 0.7)
+ ),
+ /* bottom, image */
+ url("./img/home.jpg");
+background-size: cover;
+height:70vh;
+
+
+}
+.container.text-center {
+  padding: 50px;
+  color: rgb(255, 255, 255);
+  font-family: Montserrat;
+font-size: 36px;
+font-weight: 600;
+
+}
+.container input[type="text"] {
+  padding: 15px;
+  font-size: 16px;
+ color: rgb(255, 255, 255);
+
+  width: 100%;
+  
+ border-color: rgba(255, 255, 255, 0.25);
+  background-color: rgba(255, 255, 255, 0.25);
+  /* Ensure padding and border are included in the width */
+}
+.container input[type="text"]::placeholder {
+  color: rgb(234, 245, 234); /* Placeholder text color */
+  font-size: 16px;
+  font-family: Montserrat;
+}
